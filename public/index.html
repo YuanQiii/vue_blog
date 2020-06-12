@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>YuanQiii_Blog</title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+  <div class="container">
+    <div id="app"></div>
+
+  </div>
+  <div class="footer">
+    <span>所有者：</span><a href="https://github.com/YuanQiii" target="_blank">YuanQiii</a>
+    <span> | 上线于：2020/04/4</span>
+  </div>
+
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
+
+<style>
+  html,
+  body {
+    padding: 3px;
+    margin: 3px;
+    height: 100%;
+    background-color: #2d3436;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  html.light,
+  body.light {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 1000% 1000%;
+    animation: gradient 15s ease infinite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 99;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .container {
+    position: relative;
+    margin: 0 auto;
+    height: auto !important;
+    min-height: 100%;
+  }
+
+  .footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-top: 1px dashed rgba(0, 0, 0, 0.1);
+  }
+
+  .footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+
+  .footer span {
+    line-height: 40px;
+    color: #dfe6e9;
+  }
+
+  .footer a:hover {
+    background-color: #dfe6e9;
+    color: #2d3436;
+    padding: 0.3rem;
+  }
+
+  .footer a {
+    transition: 0.4s;
+    color: #dfe6e9;
+    text-decoration: none;
+  }
+</style>
